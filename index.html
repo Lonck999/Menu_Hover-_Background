@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Menu Hover Effects Change Background</title>
-	<link rel="stylesheet" href="./main.css">
-</head>
-<body>
-	<ul>
-		<li data-bg="home.jpg"><a href="#">Home</a></li>
-		<li data-bg="about.jpg"><a href="#">About</a></li>
-		<li data-bg="services.jpg"><a href="#">Services</a></li>
-		<li data-bg="Portfolio.jpg"><a href="#">Portfolio</a></li>
-		<li data-bg="ourTeam.jpg"><a href="#">Our Team</a></li>
-		<li data-bg="contact.jpg"><a href="#">Contact</a></li>
-	</ul>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu Hover Effects Change Background</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <ul>
+      <li data-bg="home.jpg"><a href="#">Home</a></li>
+      <li data-bg="about.jpg"><a href="#">About</a></li>
+      <li data-bg="services.jpg"><a href="#">Services</a></li>
+      <li data-bg="portfolio.jpg"><a href="#">Portfolio</a></li>
+      <li data-bg="ourTeam.jpg"><a href="#">Our Team</a></li>
+      <li data-bg="contact.jpg"><a href="#">Contact</a></li>
+    </ul>
 
-	<script>
-		const body = document.querySelector("body");
-		const li = document.querySelectorAll("li");
+    <script>
+      const body = document.querySelector("body");
+      const li = document.querySelectorAll("li");
 
-		li.forEach(el => {
-			el.addEventListener("mouseover", () => {
-				let bg = el.getAttribute("data-bg");
-				body.style.background = `url(${bg})no-repeat center /cover`;
-			});
-		});
-	</script>
-</body>
+      li.forEach((el) => {
+        el.addEventListener("mouseover", () => {
+          let bg = el.getAttribute("data-bg");
+          body.style.background = `url(${bg})no-repeat center /cover`;
+        });
+      });
+    </script>
+  </body>
 </html>
